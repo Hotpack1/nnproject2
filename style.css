@@ -38,5 +38,39 @@ body {
 .task{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    line-height: 60px;
+    padding-left: 15px;
+    
+}
+
+.task-done {
+    text-decoration: line-through;
+    
+    
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-trash{
+    color: red;
+}
+
+.button-area{
+    display: flex;
+}
+
+.button-area button{
+    display: inline-block;
+    height: 100%;
+    width: 5em;
+    background-color: white;
+    margin: 0px;
+    border: none;
+}
+
+#add-button{
+    width: 30px;
+    border: lightblue 0.5px;
 }
