@@ -1,13 +1,31 @@
+@font-face {
+    font-family: 'HSSanTokki20-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'HSSanTokki20-Regular';
     margin: 0px;
-    background-image: url(background.jfif);
+    background-image: url(back.jfif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+h1{
+    text-align: center;
+    
+}
 .container{
     background-color: white;
-    height: 100vh;
+    margin-top: 20vh;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 0.5%;
+    background-image: url(seed.png);
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -17,22 +35,24 @@ body {
 
 .task-tabs{
     display: flex;
-    border-bottom: 1px solid lightgray;
+    
     position: relative;
 }
 
 .task-tabs div{
     padding: 1em;
+    cursor: pointer;
 }
 
 #under-line{
     height: 4px;
-    background-color: pink;
+    background-color: greenyellow;
     position: absolute;
     width: 80px;
     left: 0px;
     top: 52px;
     padding: 0px;
+    transition: 0.5s;
 }
 
 .task{
@@ -41,21 +61,28 @@ body {
     line-height: 60px;
     padding-left: 15px;
     
-}
-
-.task-done {
-    text-decoration: line-through;
-    
     
 }
 
-.fa-check{
+.fa-seedling {
+    color:green;
+}
+
+
+
+.fa-cannabis{
     color: green;
 }
 
 .fa-trash{
     color: red;
 }
+
+.fa-droplet{
+    color: skyblue;
+}
+
+
 
 .button-area{
     display: flex;
@@ -74,3 +101,4 @@ body {
     width: 30px;
     border: lightblue 0.5px;
 }
+
